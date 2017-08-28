@@ -14,7 +14,9 @@ module.exports = {
         path: path.join(__dirname, "dist"),
         filename: "bundle.js",
     },
-    devtool: "eval",
+    // devtool: "eval", // snabbare
+    // devtool: "cheap-source-map", //snabb
+    devtool: "source-map",
     module: {
         loaders: [
             // .ts(x) files should first pass through the Typescript loader, and then through babel
